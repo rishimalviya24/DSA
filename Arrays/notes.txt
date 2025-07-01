@@ -1,0 +1,32 @@
+Creating an array ----------------
+
+syntax -
+
+dataType arrayName[ ] = new dataType[size];
+
+size of array is always static - runtime pe koi bhi change ni hoga sru me jo save kiya vahi chalega .
+
+why indexing of array starts from 0 - 0-based index hoti haii - c++ or java me 
+
+defination of array - array is the list of elements of the same type 
+or
+list of elements of the same type placed in a contigous memory location - lagatar .
+
+computer kii memory ke andar hum apne plots bana lete haii  - 1byte 
+har plot ka ek address bhi hoga 
+interger = 4 byte
+char - 1 byte
+har structure ko visualize kar - jo structure jaisa dikhta hai bo vaisa hii kyu dikhta haii 
+
+marks[0] = it is an variable 
+
+for finding length of array = arrName.length 
+
+function me do type se argument pass karte haii - pass by value or pass by reference
+array by reference pass karte haii 
+
+
+LINEAR SEARCH - 
+JAB HUM EK EK KARKE ARRAY KE HAR INDEX PR JAAKE DEKHTE HAII KI KYA YAHA HUMAARI KEY KYA YAHA HAII IT IS CALLED LINEAR SEARCH.
+
+
