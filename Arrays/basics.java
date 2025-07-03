@@ -34,29 +34,30 @@
 //     }
 // }
 
-import java.util.*;
-public class basics {
-    public static void update(int marks[] , int nonChangable) {
-      nonChangable = 10;
-        for( int i=0;i<marks.length; i++){
-            marks[i] = marks[i] + 1;
-        }  
-    }
-    public static void main(String args[]) {
-        int marks[] ={ 97, 96, 98 };
-        int nonChangable = 5;
+// import java.util.*;
+// public class basics {
+//     public static void update(int marks[] , int nonChangable) {
+//       nonChangable = 10;
+//         for( int i=0;i<marks.length; i++){
+//             marks[i] = marks[i] + 1;
+//         }  
+//     }
+//     public static void main(String args[]) {
+//         int marks[] ={ 97, 96, 98 };
+//         int nonChangable = 5;
 
-        update(marks, nonChangable);
-        System.out.println(nonChangable);
+//         update(marks, nonChangable);
+//         System.out.println(nonChangable);
 
-        // print out marks
-        for(int i=0;i<marks.length; i++){
-            System.out.println(marks[i]);
-        }
+//         // print out marks
+//         for(int i=0;i<marks.length; i++){
+//             System.out.println(marks[i]);
+//         }
 
-    }
-}
+//     }
+// }
 
 //In the previous ques output the value of nonChangable is not change bcoz there is a concept called pass by value or pass by reference -
 // Jab bhi hum kii variable ke through data pass karte haii Jo ki primitive value hai toh bo kabhi bhi change nii hoti uski ek copy pass hoti haii 
 // but if you are passing an the value of array is changed bcoz array is non primitive value.
+
