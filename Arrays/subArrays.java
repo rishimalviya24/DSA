@@ -63,52 +63,52 @@
 // }
 
 
-// import java.util.*;
-// public class subArrays {
-//     public static int maxSubarraySum(int numbers[]){
-//         int currSum =0;
-//         int maxSum = Integer.MIN_VALUE;
+import java.util.*;
+public class subArrays {
+    public static int maxSubarraySum(int numbers[]){
+        int currSum =0;
+        int maxSum = Integer.MIN_VALUE;
 
-//         for(int i=0; i<numbers.length; i++) {
-//             int start = i;
-//             for(int j=0; j<numbers.length; j++){
-//                 int end = j;
-//                 currSum = 0;
-//                 for(int k=0; k<=end; k++){
-//                     //SubArray sum
-//                     currSum += numbers[k];
-//                 }
-//                 System.out.println(currSum);
-//                 if(maxSum < currSum){
-//                     maxSum = currSum;   
-//                 }
-//             }
-//         }
-//         System.out.println("max sum = "+ maxSum);
-//         return 0;
-//     }
-//     public static void main(String args[]){
-//         int numbers[] = { 1, -2, 6, -1, 3 };
-//         maxSubarraySum(numbers);
+        for(int i=0; i<numbers.length; i++) {
+            int start = i;
+            for(int j=0; j<numbers.length; j++){
+                int end = j;
+                currSum = 0;
+                for(int k=0; k<=end; k++){
+                    //SubArray sum
+                    currSum += numbers[k];
+                }
+                System.out.println(currSum);
+                if(maxSum < currSum){
+                    maxSum = currSum;   
+                }
+            }
+        }
+        System.out.println("max sum = "+ maxSum);
+        return 0;
+    }
+    public static void main(String args[]){
+        int numbers[] = { 1, -2, 6, -1, 3 };
+        maxSubarraySum(numbers);
 
-//     }
-// }
+    }
+}
 
-//time complexity due to three nexted loops O(n3) its is  ye sabse basic problem haii toh solve this question.
+time complexity due to three nexted loops O(n3) its is  ye sabse basic problem haii toh solve this question.
 
 
 // isse optimise way to solve this problem is prefix sum 
 
 // prefix sum ---- 
-// ek new array banake usko name dedo prefix array 
-// isme ith element tak ka saara sum for first index 0 th place 
-// second index = 0th + 1th index ka element ka sum 
-// third index = 0 se 2nd index tak ke elements ka sum 
-// loop hatega or ek single statement lag jayega bcoz of loop takes more time our code is optimised.
-// prefix[end] - prefix[start - 1];
-// prefix[i-1] - arr[i]
-// phle ke saare elements ka sum - current element ka sum.
-// time complexity = O(n2);
+ek new array banake usko name dedo prefix array 
+isme ith element tak ka saara sum for first index 0 th place 
+second index = 0th + 1th index ka element ka sum 
+third index = 0 se 2nd index tak ke elements ka sum 
+loop hatega or ek single statement lag jayega bcoz of loop takes more time our code is optimised.
+prefix[end] - prefix[start - 1];
+prefix[i-1] - arr[i]
+phle ke saare elements ka sum - current element ka sum.
+time complexity = O(n2);
 
 //kadane's law  iski time complexity hai O(n);  
 
