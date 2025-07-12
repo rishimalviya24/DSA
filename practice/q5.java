@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class q5 {
     public static int largest(int numbers[]) {
         int largest = Integer.MIN_VALUE;
@@ -19,7 +18,5 @@ public class q5 {
     public static void main (String args[]){
         int numbers[] = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19};
         System.out.println("largest value is :" + largest(numbers));
-
-    }
-   
+    } 
 }
